@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="ressources/logo/WhatsApp Image 2022-07-20 at 13.19.18.jpeg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="Resources/Logo/WhatsApp Image 2022-07-20 at 13.19.18.jpeg">
-    <title>DCL</title>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
+
     <header>
         <nav class="navbar">
-            <a href="#"><img src="Resources/Logo/WhatsApp Image 2022-07-20 at 13.19.18.jpeg" alt="logo"></a>
+            <a href="#"><img src="ressources/logo/WhatsApp Image 2022-07-20 at 13.19.18.jpeg" alt="logo"></a>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="active">ACCUEIL</a>
+                    <a href="index.php" class="active">ACCUEIL</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">A PROPOS</a>
@@ -28,14 +28,8 @@
                 </li>
             </ul>  
             <i class="fa-solid fa-bars"></i>  
-        </nav>
-        
+        </nav>  
     </header>
     
-    <main>
-        
-    </main>
-
-    <script src="JS/script.js"></script>
 </body>
 </html>
