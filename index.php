@@ -14,11 +14,14 @@
 </head>
 <body>
     <!-- Header -->
-    <?php include_once('pages/header.php'); ?>
+    <?php require('pages/header.php'); ?>
     
     <!-- Main page of the site: Welcomme page -->
     <main>
         
+        <!-- Accueil page -->
+        <?php include_once('pages/accueil.php') ?>
+
     </main>
 
     <!-- Footer -->

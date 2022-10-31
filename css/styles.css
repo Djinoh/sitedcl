@@ -15,7 +15,7 @@ header{
     background-color: white;
     position: fixed;
     width: 100%;
-    box-shadow: 0 0 10px #D0D0D0;
+    box-shadow: 0 0 25px #D0D0D0;
 }
 
 .navbar{
@@ -124,20 +124,315 @@ nav ul li a:hover, nav ul li a.active{
      } 
 }
 
-main{
-    height: 100px;
+/* ******************************** Main Styles ************************************ */
+
+main .detail{
+    margin-top: 90px;
+    width: 100%;
+    /* height: 800px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+/* ************* Style section classe = service-gagne-temps */
+main .service-gagne-temps{
+    width: 100%;
+    height: 510px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    
+}
+
+main .service-gagne-temps .image-container{
+    width: 75%;
+    height: 100%;
+    overflow: hidden;
+    margin-left: 150px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 0 5px 0 #D0D0D0;
+}
+
+main .service-gagne-temps .image-container img{
+    border-radius:  20px;
+    height: 100%;
+    width: 100%; 
+    transition: transform .2s; 
+}
+
+
+main .service-gagne-temps .image-container img:hover{
+    transform: scale(1.5) translate(30px);
+}
+
+.text{
+    margin: 50px;
+}
+
+.text h3{
+    font-size: 55px;
+    color: deeppink; 
+    font-weight: 800; 
+}  
+
+.text span{
+    color: #777171;
+    font-size: 22px;
+}
+
+.nos-activites{
+    margin: 30px;
+    padding: 50px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 #D0D0D0;
+}
+
+.container-activite{
+    display: flex;
+    margin-top: 50px;
+    height: 850px;
+    padding: 80px;
+    background: #dcd3d3f2;
+    border-radius: 20px;
+    opacity: 0.9999;
+    justify-content: space-between;
+    box-shadow: 0 0 15px 0 #D0D0D0;
+}
+
+.container-activite .detail-activite {
+    font-size: 20px;
+    padding: 40px;
+    
+}
+
+.detail-activite h3{
+    margin-bottom: 10px;
+}
+
+.imgactivite img{
+    border-radius: 20px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax {
+    background-image: url("../ressources/imagesAccueil/BeautyPlus1.jpg");
+    height: 700px;
+    margin-top: 800px;
+    /* L'effet de parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .parallax p{
+    height: 20px;
+  }
+
+  .parallax div{
+    display: flex;
+    width: 45%;
+    height: 45%;
+    margin-left: 50px;
+    margin-top: 150px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 #D0D0D0;
+  }
+
+  .parallax .text-parallax{
+    font-size: 25px;
+    padding: 50px;
+  }
+
+  .propos{
+    background: url('../ressources/imagesAccueil/IMG.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    margin: 80px 0 0 400px;
+    width: 60%;
+    height: 850px; 
+    border-radius: 20px;
+  }
+
+  .propos span{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 45%;
+    height: 45%;
+    margin-left: 50px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 #D0D0D0;
+  }
+
+  .propos h2{
+    margin-bottom: 10px;
+  }
+
+  .propos span:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .propos div{
+    height: 30px;
+  }
+
+  .container-team{
+    height: 550px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 45px;
+    border-radius: 20px;
+    /* backdrop-filter: blur(0.5px); */
+    box-shadow: 0 0 15px 0 #D0D0D0;
+  }
+
+  .container-team .team{
+    width: 30%;
+    height: 450px;
+    margin: 40px 40px 0 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px 0 #D0D0D0;;
+  }
+
+  .container-team .team img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    background-size: cover;
+  }
+/************************ Mobile styles accueil ********/
+  @media screen and (max-width: 1754px){
+    .propos span{
+        height: 65%;
+    }
+  }
+
+  @media screen and (max-width: 1324px){
+    .container-activite .detail-activite {
+        font-size: 18px;
+        padding: 50px;
+        
+    }
+
+    .parallax .text-parallax{
+        font-size: 18px;
+        padding: 50px;
+      }
+  }
+
+  @media screen and (max-width: 1256px){
+    .propos span{
+        margin-top: 350px;
+        height: 54%;
+        width: 85%;
+        
+    }
+
+    .propos{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 250%;
+        margin: 80px 0 0 300px;
+        width: 60%;
+        height: 850px; 
+        border-radius: 20px;
+      }
+  }
+
+  @media screen and (max-width: 1180px){
+    .container-activite {
+        flex-direction: column;  
+    }
+
+    .detail-activite{
+        display: none;
+    }
+
+    .imgactivite img{
+        width: 100%;
+        height: 650px;
+    }
+  }
+
+  @media screen and (max-width: 1030px) {
+    .image-container img{
+        border-radius:  20px;
+        height: 50px;
+        margin: 0;
+        padding: 0;
+    
+    }
+
+    .image-container{
+        margin: 0;
+        padding: 0;
+    }
+
+    .text{
+        margin: 20px;
+    }
+    
+    .text h3{
+        font-size: 45px;
+        color: deeppink; 
+        font-weight: 800; 
+    }  
+    
+    .text span{
+        color: #777171;
+        font-size: 18px;
+    }
+
+   
+  }
+
+  @media screen and (max-width: 948px){
+    .service-gagne-temps{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column-reverse;
+
+        
+    }
+
+    .service-gagne-temps img{
+        background-position: center;
+        margin-right: 90px;
+    }
+  }
+
+  @media screen and (max-width: 750px){
+    
+  }
+
+
+
 
 /************************* Footer Styles  ***********************************/
 
 footer{
-    /* margin-top: 50px;  */
+    margin-top: 50px; 
     width: 100%;
     bottom: 0;
     left: 0;
     background: white;
     box-shadow: 0 0 5px 0 #D0D0D0;
-
 }
 
 /* Le grand trait apres l'en-tete du footer  */
@@ -146,7 +441,7 @@ footer::before{
     content: '';
     position: absolute;
     left: 0;
-    top: 210px;
+    /* top: 665px; */
     height: 1px;
     width: 100%;
     background: #000000;
